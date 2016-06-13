@@ -1,0 +1,15 @@
+.place-info{
+  background-color: lightgray;
+}
+
+.infoList{
+  background-color: red;
+}
+
+.placeImage{
+  background-color: blue;
+}
+
+.hr-change{
+  margin: 12px;
+}
