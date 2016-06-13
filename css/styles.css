@@ -2,14 +2,19 @@
   background-color: lightgray;
 }
 
-.infoList{
-  background-color: red;
-}
-
-.placeImage{
-  background-color: blue;
-}
-
 .hr-change{
   margin: 12px;
+}
+
+.placename {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.placename:hover {
+  text-decoration: underline;
+}
+
+img{
+  width: 100%;
 }

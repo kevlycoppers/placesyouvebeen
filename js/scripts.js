@@ -12,5 +12,11 @@ var amsterdam = new Place("Amsterdam","The Netherlands","Anne Frank House","Spri
 
 //Front End
 $(document).ready(function(){
+  $(".place-list").append("<li class='placename'>"+amsterdam.name+"</li>");
+  $(".placename").last().click(function(event){
+    event.preventDefault();
+    $(".infoList").append("<li class='infoItem'>Place Name: " + amsterdam.name + "</li><li>Country: "+amsterdam.country+"</li><li>Landmarks: " + amsterdam.landmarks + "</li><li>Time of Year Visited: " + amsterdam.timeOfYear + "</li><li>Notes: " + amsterdam.notes + "</li>");
+    $(".placeImage").append("<img class='infoItem' src='"+amsterdam.imgLink+"' alt='Amsterdam'>");
 
+  });
 });
